@@ -1,0 +1,107 @@
+*,
+*:antes,
+*:depois{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Odibee Sans', cursive;
+    font-weight: 500;
+}
+
+
+/* Colocando cor de fundo */
+body {
+    height:100vh;
+    background:linear-gradient( 
+        135deg, 
+        rgb(15, 15, 15),
+        rgb(23, 175, 175),
+        rgb(150, 37, 179),
+        rgb(46, 7, 68));
+}
+
+/*Centralizando local onde ficará as informações*/
+
+.container{
+    background:linear-gradient(
+        130deg,
+        rgb(60, 5, 65),
+        rgb(23, 157, 175));
+    width:70%;
+    min-width: 420px;
+    padding:35px 50px;
+    transform:translate(-50%,-50%);
+    position:absolute;
+    left:50%;
+    top:50%;
+    border-radius:10px;
+    box-shadow:20px 30px 25px rgba(0,0,0,0.15);
+}
+
+h1 {
+    font-size: 30px;
+    text-align:center;
+    color:rgb(30, 186, 214);
+}
+
+p {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    color:rgb(239, 232, 243);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+form{
+    width: 100%;
+    position: relative;
+    margin: 30px auto 0 auto;  
+}
+
+.fileira{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-gap: 20px 30px;
+    margin-bottom: 20px;
+}
+
+label{
+    color:rgb(201, 231, 238);
+    font-size: 18px;
+}
+
+
+/*Estilização do espaço a ser inserido*/
+
+textarea, 
+input{
+    width: 100%;
+    font-weight:400;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border:1.2px solid rgb(209, 35, 209);
+    margin-top:5px;
+}
+
+textarea{
+    resize:none;
+}
+
+textarea:focus,
+input:focus{
+    outline: none;
+    border-color:rgb(126, 189, 226)
+}
+
+button{
+    border: none;
+    padding: 10px 20px;
+    background:linear-gradient(
+        130deg,
+        rgb(213, 28, 230),rgb(162, 23, 175));
+    color:rgb(238, 223, 223);
+    border-radius: 10px;
+}
